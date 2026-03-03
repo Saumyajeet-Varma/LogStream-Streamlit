@@ -29,12 +29,16 @@ def sanitize_filename(url):
 def format_export_data(df, fmt):
     if fmt == 'csv':
         content = df.to_csv(index=False).encode('utf-8')
-        return content, "text/csv", "csv"
+        MIME_type = "text/csv"
+        extension = "csv"
     elif fmt == 'json':
-        content = df.to_json(orient='records').encode('utf-8')
-        return content, "application/json", "json"
+        content = df.to_json(orient='records', indent=4).encode('utf-8')
+        MIME_type = "application/json"
+        extension = "json"
     elif fmt == 'txt':
         content = "\n".join(df['Log Message'].tolist()).encode('utf-8')
-        return content, "text/plain", "txt"
+        MIME_type = "text/plain"
+        extension = "txt"
     else:
-        return None, None, None
+        content, MIME_type, extension = None, None, None
+    return content, MIME_type, extension
