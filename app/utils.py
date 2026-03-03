@@ -19,7 +19,7 @@ def fetch_logs(url):
             except(ValueError, OverflowError):
                 continue
         return pd.DataFrame(data)
-    Exception as e:
+    except Exception as e:
         return str(e)
 
 def sanitize_filename(url):
