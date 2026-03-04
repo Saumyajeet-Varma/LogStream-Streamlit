@@ -53,7 +53,6 @@ Navigate to `http://localhost:8501` in your browser.
 If you preferto run it locally without Docker.
 
 ```bash
-```bash
 # Clone the repository
 git clone https://github.com/Saumyajeet-Varma/logstream-streamlit.git
 cd logstream-streamlit
