@@ -40,14 +40,14 @@ The easiest way to run the app is Docker Compose. This handles all dependencies 
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Saumyajeet-Varma/logstream-streamlit.git](https://github.com/Saumyajeet-Varma/logstream-streamlit.git)
+git clone https://github.com/Saumyajeet-Varma/logstream-streamlit.git
 cd logstream-streamlit
 
 # Build and start the container
 docker-compose up --build
 ```
 
-> Navigate to `http://localhost:8501` in your browser.
+Navigate to `http://localhost:8501` in your browser.
 
 ### 2. Manual Installation
 If you preferto run it locally without Docker.
@@ -55,7 +55,7 @@ If you preferto run it locally without Docker.
 ```bash
 ```bash
 # Clone the repository
-git clone [https://github.com/Saumyajeet-Varma/logstream-streamlit.git](https://github.com/Saumyajeet-Varma/logstream-streamlit.git)
+git clone https://github.com/Saumyajeet-Varma/logstream-streamlit.git
 cd logstream-streamlit
 
 # Install dependencies
