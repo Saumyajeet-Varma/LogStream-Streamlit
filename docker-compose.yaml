@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  logstream:
+    build: .
+    image: logstream:latest
+    container_name: logstream
+    ports:
+      - 8501:8501
+    restart: always
+    volumes:
+      - ./app:/app/app
+    deploy:
+      resources:
+        limits:
+          memory: 512M
